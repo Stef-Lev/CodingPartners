@@ -1,0 +1,176 @@
+$headerBlue: hsl(233, 26%, 24%);
+$lightGray:hsl(233, 8%, 62%);
+$buttonGreen:hsl(136, 65%, 51%);
+$buttonBlue:hsl(192, 70%, 51%);
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+header{
+    box-sizing: content-box;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    z-index: 3;
+
+    .invite-btn{
+        display: none;
+    }
+    
+}
+
+.top-navbar {
+    
+    .top-nav-links{
+        display: none;
+    }
+}
+
+main {
+    .intro-set{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .intro-images-mob {
+        position: relative;
+    }
+    .intro-images-desk{
+        display: none;
+    }
+
+    .mob-background-img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-top: -18%;
+        margin-bottom: -8%;
+    } 
+    .mob-background-phones {
+        position: absolute;
+        margin-top: -32%;
+        left: 5%;
+        width: 90%;
+    }
+    .intro-text {
+        position: relative;
+        margin: 0 auto;
+        padding: 0 40px;
+        text-align: center;
+         
+        h1{
+            font-size: 3rem;
+            line-height: 1.2;
+            color: $headerBlue;
+            font-weight: 400;
+        }
+        p{
+            margin-top: 20px;
+            line-height: 2; 
+            font-size: 1.1rem; 
+            color:$lightGray;
+        }
+    }
+
+    .invite-btn{
+        border: none;
+        border-radius: 40px;
+        padding: 15px 30px;
+        background-image: linear-gradient(to right, $buttonGreen , $buttonBlue);
+        color: white;
+        font-size: 1.2rem;
+        margin: 50px auto;
+        font-size: 16px;
+        font-weight: 700;
+
+    }
+}
+
+@media (min-width: 768px) { 
+    header{
+
+        .burger{
+            display: none;
+        }
+        a{
+           text-decoration: none;
+           color: $lightGray;
+           font-size: 16px;
+        }
+        .invite-btn{
+            display: block;
+            border: none;
+            border-radius: 40px;
+            padding: 15px 30px;
+            background-image: linear-gradient(to right, $buttonGreen , $buttonBlue);
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        
+    }
+
+    .top-navbar {
+    
+        .top-nav-links{
+            display: inline-block;
+            // display: flex;
+            // flex-direction: row;
+            list-style-type: none;
+            text-decoration: none;
+        }
+        .top-nav-links li{
+            display: inline;
+            margin: 0 10px;
+        }
+        img.burger{
+            display: none;
+        }
+    }
+    
+    main{
+        .intro-set{
+            flex-direction: row-reverse;
+        }  
+        .intro-text{
+            flex: 50%;
+            padding-left: 70px;
+            padding-right: 70px;
+            margin-top: 100px;
+        }
+        .intro-images-mob{
+            display: none;
+        }
+        .intro-images-desk{
+            display: block;
+            flex: 50%;
+            position: relative;
+        }
+        .desk-background-img{
+            position: absolute;
+            width: 150%;
+            margin-top: -31%;
+            
+        }
+        .desk-background-phones{
+            position: absolute;
+            width: 90%;
+            margin-top: -14%;
+            margin-left: 25%;
+            
+
+        }
+    }
+ }

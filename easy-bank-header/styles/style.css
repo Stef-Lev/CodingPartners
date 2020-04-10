@@ -1,0 +1,180 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+header {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: relative;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 40px;
+  z-index: 3;
+}
+
+header .invite-btn {
+  display: none;
+}
+
+.top-navbar .top-nav-links {
+  display: none;
+}
+
+main .intro-set {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .intro-images-mob {
+  position: relative;
+}
+
+main .intro-images-desk {
+  display: none;
+}
+
+main .mob-background-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: -18%;
+  margin-bottom: -8%;
+}
+
+main .mob-background-phones {
+  position: absolute;
+  margin-top: -32%;
+  left: 5%;
+  width: 90%;
+}
+
+main .intro-text {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+main .intro-text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #2d314d;
+  font-weight: 400;
+}
+
+main .intro-text p {
+  margin-top: 20px;
+  line-height: 2;
+  font-size: 1.1rem;
+  color: #9698a6;
+}
+
+main .invite-btn {
+  border: none;
+  border-radius: 40px;
+  padding: 15px 30px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  color: white;
+  font-size: 1.2rem;
+  margin: 50px auto;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  header .burger {
+    display: none;
+  }
+  header a {
+    text-decoration: none;
+    color: #9698a6;
+    font-size: 16px;
+  }
+  header .invite-btn {
+    display: block;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 30px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+    background-image: linear-gradient(to right, #31d35c, #2bb7da);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .top-navbar .top-nav-links {
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .top-navbar .top-nav-links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  .top-navbar img.burger {
+    display: none;
+  }
+  main .intro-set {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  main .intro-text {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 100px;
+  }
+  main .intro-images-mob {
+    display: none;
+  }
+  main .intro-images-desk {
+    display: block;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    position: relative;
+  }
+  main .desk-background-img {
+    position: absolute;
+    width: 150%;
+    margin-top: -31%;
+  }
+  main .desk-background-phones {
+    position: absolute;
+    width: 90%;
+    margin-top: -14%;
+    margin-left: 25%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
