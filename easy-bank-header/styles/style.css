@@ -1,19 +1,21 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   overflow-x: hidden;
 }
 
 header {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   position: relative;
   background-color: white;
   display: -webkit-box;
@@ -21,14 +23,14 @@ header {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 25px 40px;
   z-index: 3;
 }
@@ -48,8 +50,8 @@ main .intro-set {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 main .intro-images-mob {
@@ -100,7 +102,13 @@ main .invite-btn {
   border: none;
   border-radius: 40px;
   padding: 15px 30px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#31d35c),
+    to(#2bb7da)
+  );
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
   color: white;
   font-size: 1.2rem;
@@ -123,7 +131,13 @@ main .invite-btn {
     border: none;
     border-radius: 40px;
     padding: 15px 30px;
-    background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#31d35c),
+      to(#2bb7da)
+    );
     background-image: linear-gradient(to right, #31d35c, #2bb7da);
     color: white;
     font-size: 16px;
@@ -144,16 +158,16 @@ main .invite-btn {
   main .intro-set {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   main .intro-text {
     -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    padding-left: 70px;
-    padding-right: 70px;
-    margin-top: 100px;
+    -ms-flex: 50%;
+    flex: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
   }
   main .intro-images-mob {
     display: none;
@@ -161,8 +175,8 @@ main .invite-btn {
   main .intro-images-desk {
     display: block;
     -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
+    -ms-flex: 50%;
+    flex: 50%;
     position: relative;
   }
   main .desk-background-img {
@@ -177,4 +191,5 @@ main .invite-btn {
     margin-left: 25%;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

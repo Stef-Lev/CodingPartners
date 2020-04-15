@@ -3,6 +3,7 @@ $lightGray:hsl(233, 8%, 62%);
 $buttonGreen:hsl(136, 65%, 51%);
 $buttonBlue:hsl(192, 70%, 51%);
 
+
 *,*::before,*::after{
     margin: 0;
     padding: 0;
@@ -94,9 +95,14 @@ main {
         margin: 50px auto;
         font-size: 16px;
         font-weight: 700;
+        &:hover{
+            opacity: 0.8;
+            cursor:pointer;
+        }
 
     }
 }
+
 
 @media (min-width: 768px) { 
     header{
@@ -118,6 +124,11 @@ main {
             color: white;
             font-size: 16px;
             font-weight: 700;
+            &:hover{
+                opacity: 0.8;
+                cursor:pointer;
+            }
+    
         }
         
     }
@@ -146,9 +157,10 @@ main {
         }  
         .intro-text{
             flex: 50%;
-            padding-left: 70px;
-            padding-right: 70px;
-            margin-top: 100px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 10px;
+            text-align: left;
         }
         .intro-images-mob{
             display: none;
@@ -170,7 +182,13 @@ main {
             margin-top: -14%;
             margin-left: 25%;
             
-
         }
     }
  }
+ @media (min-width: 1000px) {
+    main .intro-text {
+      padding-left: 70px;
+      padding-right: 70px;
+      margin-top: 80px;
+    }
+}    
