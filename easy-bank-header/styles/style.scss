@@ -2,6 +2,9 @@ $headerBlue: hsl(233, 26%, 24%);
 $lightGray:hsl(233, 8%, 62%);
 $buttonGreen:hsl(136, 65%, 51%);
 $buttonBlue:hsl(192, 70%, 51%);
+$lightGrayishBlue: hsl(220, 16%, 96%);
+$veryLightGray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
 
 
 *,*::before,*::after{
@@ -29,7 +32,6 @@ header{
     .invite-btn{
         display: none;
     }
-    
 }
 
 .top-navbar {
@@ -102,6 +104,7 @@ main {
 
     }
 }
+
 
 
 @media (min-width: 768px) { 
@@ -192,3 +195,5 @@ main {
       margin-top: 80px;
     }
 }    
+
+@import 'articles';
