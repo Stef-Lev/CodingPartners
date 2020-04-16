@@ -1,8 +1,7 @@
 *, *::before, *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,23 +11,13 @@ body {
 }
 
 header {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   position: relative;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   padding: 25px 40px;
   z-index: 3;
 }
@@ -43,13 +32,8 @@ header .invite-btn {
 
 main .intro-set {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 main .intro-images-mob {
@@ -100,7 +84,6 @@ main .invite-btn {
   border: none;
   border-radius: 40px;
   padding: 15px 30px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
   color: white;
   font-size: 1.2rem;
@@ -128,7 +111,6 @@ main .invite-btn:hover {
     border: none;
     border-radius: 40px;
     padding: 15px 30px;
-    background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
     background-image: linear-gradient(to right, #31d35c, #2bb7da);
     color: white;
     font-size: 16px;
@@ -151,15 +133,10 @@ main .invite-btn:hover {
     display: none;
   }
   main .intro-set {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   main .intro-text {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
+    flex: 50%;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 10px;
@@ -170,9 +147,7 @@ main .invite-btn:hover {
   }
   main .intro-images-desk {
     display: block;
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
+    flex: 50%;
     position: relative;
   }
   main .desk-background-img {
@@ -193,6 +168,82 @@ main .invite-btn:hover {
     padding-left: 70px;
     padding-right: 70px;
     margin-top: 80px;
+  }
+}
+
+.articles {
+  padding: 100px 10%;
+  background-color: #fafafa;
+}
+
+.articles h2 {
+  color: #2d314d;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.articles .articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.articles .article {
+  flex-basis: 23%;
+  margin-top: 60px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.articles .article img {
+  width: 100%;
+  height: 270px;
+  border-radius: 7px 7px 0 0;
+}
+
+.articles .article figcaption {
+  color: #9698a6;
+  font-size: 0.8em;
+  padding: 30px 10% 15px 10%;
+}
+
+.articles .article div {
+  padding: 0 10% 25px 10%;
+}
+
+.articles .article div p {
+  color: #9698a6;
+  line-height: 1.25em;
+}
+
+.articles .article div h4 {
+  color: #2d314d;
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+@media all and (max-width: 1500px) {
+  .articles .article img {
+    height: 215px;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .articles .article {
+    flex-basis: 45%;
+  }
+  .articles .article img {
+    height: 270px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .articles .article {
+    flex-basis: 100%;
+  }
+  .articles .article img {
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
