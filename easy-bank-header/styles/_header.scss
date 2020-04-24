@@ -25,15 +25,13 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 40px;
+    padding: 25px 10%;
     z-index: 3;
 
     .invite-btn{
         display: none;
     }
-    
 }
-
 .top-navbar {
     
     .top-nav-links{
