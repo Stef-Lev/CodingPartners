@@ -2,11 +2,7 @@ $headerBlue: hsl(233, 26%, 24%);
 $lightGray:hsl(233, 8%, 62%);
 $buttonGreen:hsl(136, 65%, 51%);
 $buttonBlue:hsl(192, 70%, 51%);
-$white: hsl(0,0%,100%);
-$LightGrayishBlue: hsl(220, 16%, 96%);
-$VeryLightGray: hsl(0, 0%, 98%);
-
-
+$white: hsl(0,0,100%);
 
 *,*::before,*::after{
     margin: 0;
@@ -15,7 +11,7 @@ $VeryLightGray: hsl(0, 0%, 98%);
 }
 body{
     font-family: 'Public Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     overflow-x: hidden;
 }
 
@@ -27,15 +23,13 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 40px;
+    padding: 20px 10%;
     z-index: 3;
 
     .invite-btn{
         display: none;
     }
-    
 }
-
 .top-navbar {
     
     .top-nav-links{
@@ -52,6 +46,7 @@ main {
     .intro-images-mob {
         position: relative;
     }
+    
     .intro-images-desk{
         display: none;
     }
@@ -72,7 +67,7 @@ main {
     .intro-text {
         position: relative;
         margin: 0 auto;
-        padding: 0 40px;
+        padding: 0 10%;
         text-align: center;
          
         h1{
@@ -107,8 +102,7 @@ main {
     }
 }
 
-
-@media (min-width: 768px) { 
+@media all and (min-width: 768px) { 
     header{
 
         .burger{
@@ -141,8 +135,8 @@ main {
     
         .top-nav-links{
             display: inline-block;
-            // display: flex;
-            // flex-direction: row;
+            display: flex;
+            flex-direction: row;
             list-style-type: none;
             text-decoration: none;
         }
@@ -177,7 +171,7 @@ main {
         .desk-background-img{
             position: absolute;
             width: 150%;
-            margin-top: -31%;
+            margin-top: -31%;;
             
         }
         .desk-background-phones{
@@ -185,14 +179,7 @@ main {
             width: 90%;
             margin-top: -14%;
             margin-left: 25%;
-            
         }
     }
  }
- @media (min-width: 1000px) {
-    main .intro-text {
-      padding-left: 70px;
-      padding-right: 70px;
-      margin-top: 80px;
-    }
-}    
+    

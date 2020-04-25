@@ -1,24 +1,35 @@
 *, *::before, *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   font-family: 'Public Sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   overflow-x: hidden;
 }
 
 header {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   position: relative;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 40px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10%;
   z-index: 3;
 }
 
@@ -32,8 +43,13 @@ header .invite-btn {
 
 main .intro-set {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .intro-images-mob {
@@ -62,7 +78,7 @@ main .mob-background-phones {
 main .intro-text {
   position: relative;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 10%;
   text-align: center;
 }
 
@@ -84,6 +100,7 @@ main .invite-btn {
   border: none;
   border-radius: 40px;
   padding: 15px 30px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
   color: white;
   font-size: 1.2rem;
@@ -97,7 +114,7 @@ main .invite-btn:hover {
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media all and (min-width: 768px) {
   header .burger {
     display: none;
   }
@@ -111,6 +128,7 @@ main .invite-btn:hover {
     border: none;
     border-radius: 40px;
     padding: 15px 30px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
     background-image: linear-gradient(to right, #31d35c, #2bb7da);
     color: white;
     font-size: 16px;
@@ -122,6 +140,13 @@ main .invite-btn:hover {
   }
   .top-navbar .top-nav-links {
     display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     list-style-type: none;
     text-decoration: none;
   }
@@ -133,10 +158,15 @@ main .invite-btn:hover {
     display: none;
   }
   main .intro-set {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   main .intro-text {
-    flex: 50%;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 10px;
@@ -147,7 +177,9 @@ main .invite-btn:hover {
   }
   main .intro-images-desk {
     display: block;
-    flex: 50%;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
     position: relative;
   }
   main .desk-background-img {
@@ -163,17 +195,74 @@ main .invite-btn:hover {
   }
 }
 
-@media (min-width: 1000px) {
-  main .intro-text {
-    padding-left: 70px;
-    padding-right: 70px;
-    margin-top: 80px;
+.features {
+  padding: 50px 10%;
+  position: relative;
+  background-color: #9b9b9b;
+  z-index: -2;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 20px;
+}
+
+.features p {
+  margin-bottom: 50px;
+}
+
+.icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feature-icons {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.feature-icons img, .feature-icons h3 {
+  margin-bottom: 20px;
+}
+
+.feature-icons p {
+  margin-bottom: 50px;
+}
+
+@media all and (min-width: 768px) {
+  .feature-icons {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .features {
+    text-align: left;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  .feature-icons {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+  }
+  .feature-icons .features {
+    text-align: left;
   }
 }
 
 .articles {
   padding: 100px 10%;
   background-color: #fafafa;
+  position: relative;
 }
 
 .articles h2 {
@@ -183,13 +272,19 @@ main .invite-btn:hover {
 }
 
 .articles .articles-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .articles .article {
-  flex-basis: 23%;
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
   margin-top: 60px;
   background-color: white;
   border-radius: 5px;
@@ -231,7 +326,8 @@ main .invite-btn:hover {
 
 @media all and (max-width: 1300px) {
   .articles .article {
-    flex-basis: 45%;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
   }
   .articles .article img {
     height: 270px;
@@ -240,7 +336,8 @@ main .invite-btn:hover {
 
 @media all and (max-width: 768px) {
   .articles .article {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .articles .article img {
     height: auto;
