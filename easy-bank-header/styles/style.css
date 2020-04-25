@@ -176,7 +176,7 @@ main .invite-btn:hover {
     position: relative;
   }
   main .desk-background-img {
-    position: absolute;
+    position: relative;
     width: 150%;
     margin-top: -31%;
   }
@@ -185,14 +185,6 @@ main .invite-btn:hover {
     width: 90%;
     margin-top: -14%;
     margin-left: 25%;
-  }
-}
-
-@media all and (min-width: 1000px) {
-  main .intro-text {
-    padding-left: 70px;
-    padding-right: 70px;
-    margin-top: 80px;
   }
 }
 
