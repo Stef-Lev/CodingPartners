@@ -140,6 +140,13 @@ main .invite-btn:hover {
   }
   .top-navbar .top-nav-links {
     display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     list-style-type: none;
     text-decoration: none;
   }
@@ -176,7 +183,7 @@ main .invite-btn:hover {
     position: relative;
   }
   main .desk-background-img {
-    position: relative;
+    position: absolute;
     width: 150%;
     margin-top: -31%;
   }

@@ -135,8 +135,8 @@ main {
     
         .top-nav-links{
             display: inline-block;
-            // display: flex;
-            // flex-direction: row;
+            display: flex;
+            flex-direction: row;
             list-style-type: none;
             text-decoration: none;
         }
@@ -169,7 +169,7 @@ main {
             position: relative;
         }
         .desk-background-img{
-            position: relative;
+            position: absolute;
             width: 150%;
             margin-top: -31%;;
             
