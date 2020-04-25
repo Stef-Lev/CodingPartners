@@ -1,16 +1,54 @@
+$icon-cont-bkg:hsl(220, 16%, 96%);
+
 .features{
-    padding: 0 10%;
+    padding: 50px 10%;
     position: relative;
-    top:100px;
     background-color: rgb(155, 155, 155);
     z-index: -2;
+    text-align: center;
+
+    h2{
+        margin-bottom: 20px;
+    }
+    p{
+        margin-bottom: 50px;
+    }
 }
 
 .icon-wrapper{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .feature-icons{
-    width: 100%;
+   flex-basis: 100%;
+   img,h3{
+       margin-bottom: 20px;
+   }
+   p{
+       margin-bottom: 50px;
+   }
 }
+
+@media all and (min-width: 768px){
+    .feature-icons{
+        flex-basis: 45%; 
+    }
+    .features{
+        text-align: left;
+    }
+}
+
+@media all and (min-width: 1300px){
+    .feature-icons{
+        flex-basis: 23%; 
+    .features{
+        text-align: left;
+    }
+}
+}
+
+
+
