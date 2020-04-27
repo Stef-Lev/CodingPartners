@@ -2,6 +2,7 @@ $headerBlue: hsl(233, 26%, 24%);
 $lightGray:hsl(233, 8%, 62%);
 $buttonGreen:hsl(136, 65%, 51%);
 $buttonBlue:hsl(192, 70%, 51%);
+$iconsGrey:hsl(220, 16%, 96%);
 $white: hsl(0,0,100%);
 
 *,*::before,*::after{
@@ -23,7 +24,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding: 20px 8%;
     z-index: 3;
 
     .invite-btn{
@@ -34,8 +35,14 @@ header{
     
     .top-nav-links{
         display: none;
-    }
+    } 
 }
+.burger{
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
 
 main {
     .intro-set{
@@ -67,7 +74,7 @@ main {
     .intro-text {
         position: relative;
         margin: 0 auto;
-        padding: 0 10%;
+        padding: 0 8%;
         text-align: center;
          
         h1{
@@ -87,12 +94,12 @@ main {
     .invite-btn{
         border: none;
         border-radius: 40px;
-        padding: 15px 30px;
+        padding: 12px 24px;
         background-image: linear-gradient(to right, $buttonGreen , $buttonBlue);
         color: white;
         font-size: 1.2rem;
         margin: 50px auto;
-        font-size: 16px;
+        font-size: .9rem;
         font-weight: 700;
         &:hover{
             opacity: 0.8;
@@ -111,16 +118,16 @@ main {
         a{
            text-decoration: none;
            color: $lightGray;
-           font-size: 16px;
+           font-size: 1rem;
         }
         .invite-btn{
             display: block;
             border: none;
             border-radius: 40px;
-            padding: 15px 30px;
+            padding: 12px 24px;
             background-image: linear-gradient(to right, $buttonGreen , $buttonBlue);
             color: white;
-            font-size: 16px;
+            font-size: .9rem;
             font-weight: 700;
             &:hover{
                 opacity: 0.8;
@@ -132,6 +139,7 @@ main {
     }
 
     .top-navbar {
+        box-sizing: border-box;
     
         .top-nav-links{
             display: inline-block;
@@ -139,12 +147,26 @@ main {
             flex-direction: row;
             list-style-type: none;
             text-decoration: none;
+            
         }
         .top-nav-links li{
+            position: relative;
             display: inline;
             margin: 0 10px;
+
+            &:hover::after{
+                content: " ";
+                display: block;
+                position: absolute;
+                background-image: linear-gradient(to right, $buttonGreen , $buttonBlue);
+                width: 100%;
+                height: 5px;
+                bottom: -30px;
+            }
+        
         }
-        img.burger{
+
+        .burger{
             display: none;
         }
     }

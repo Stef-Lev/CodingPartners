@@ -29,7 +29,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 10%;
+  padding: 20px 8%;
   z-index: 3;
 }
 
@@ -39,6 +39,12 @@ header .invite-btn {
 
 .top-navbar .top-nav-links {
   display: none;
+}
+
+.burger {
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 main .intro-set {
@@ -78,7 +84,7 @@ main .mob-background-phones {
 main .intro-text {
   position: relative;
   margin: 0 auto;
-  padding: 0 10%;
+  padding: 0 8%;
   text-align: center;
 }
 
@@ -99,13 +105,13 @@ main .intro-text p {
 main .invite-btn {
   border: none;
   border-radius: 40px;
-  padding: 15px 30px;
+  padding: 12px 24px;
   background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
   color: white;
   font-size: 1.2rem;
   margin: 50px auto;
-  font-size: 16px;
+  font-size: .9rem;
   font-weight: 700;
 }
 
@@ -121,22 +127,26 @@ main .invite-btn:hover {
   header a {
     text-decoration: none;
     color: #9698a6;
-    font-size: 16px;
+    font-size: 1rem;
   }
   header .invite-btn {
     display: block;
     border: none;
     border-radius: 40px;
-    padding: 15px 30px;
+    padding: 12px 24px;
     background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
     background-image: linear-gradient(to right, #31d35c, #2bb7da);
     color: white;
-    font-size: 16px;
+    font-size: .9rem;
     font-weight: 700;
   }
   header .invite-btn:hover {
     opacity: 0.8;
     cursor: pointer;
+  }
+  .top-navbar {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .top-navbar .top-nav-links {
     display: inline-block;
@@ -151,10 +161,21 @@ main .invite-btn:hover {
     text-decoration: none;
   }
   .top-navbar .top-nav-links li {
+    position: relative;
     display: inline;
     margin: 0 10px;
   }
-  .top-navbar img.burger {
+  .top-navbar .top-nav-links li:hover::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+    background-image: linear-gradient(to right, #31d35c, #2bb7da);
+    width: 100%;
+    height: 5px;
+    bottom: -30px;
+  }
+  .top-navbar .burger {
     display: none;
   }
   main .intro-set {
@@ -196,19 +217,28 @@ main .invite-btn:hover {
 }
 
 .features {
-  padding: 50px 10%;
+  padding: 50px 8%;
   position: relative;
-  background-color: #9b9b9b;
+  background-color: #c9c9c9;
   z-index: -2;
   text-align: center;
 }
 
 .features h2 {
   margin-bottom: 20px;
+  font-size: 2.1rem;
+  color: #2d314d;
+}
+
+.features h3 {
+  font-size: 1.5rem;
+  color: #2d314d;
 }
 
 .features p {
   margin-bottom: 50px;
+  font-size: 1.1rem;
+  color: #9698a6;
 }
 
 .icon-wrapper {
