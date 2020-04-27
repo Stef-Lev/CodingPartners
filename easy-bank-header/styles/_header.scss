@@ -1,20 +1,3 @@
-$headerBlue: hsl(233, 26%, 24%);
-$lightGray:hsl(233, 8%, 62%);
-$buttonGreen:hsl(136, 65%, 51%);
-$buttonBlue:hsl(192, 70%, 51%);
-$white: hsl(0,0,100%);
-
-*,*::before,*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Public Sans', sans-serif;
-    font-size: 16px;
-    overflow-x: hidden;
-}
-
 header{
     box-sizing: content-box;
     position: relative;
@@ -30,6 +13,7 @@ header{
         display: none;
     }
 }
+
 .top-navbar {
     
     .top-nav-links{
@@ -85,20 +69,7 @@ main {
     }
 
     .invite-btn{
-        border: none;
-        border-radius: 40px;
-        padding: 15px 30px;
-        background-image: linear-gradient(to right, $buttonGreen , $buttonBlue);
-        color: white;
-        font-size: 1.2rem;
-        margin: 50px auto;
-        font-size: 16px;
-        font-weight: 700;
-        &:hover{
-            opacity: 0.8;
-            cursor:pointer;
-        }
-
+        @include invite
     }
 }
 
@@ -114,19 +85,7 @@ main {
            font-size: 16px;
         }
         .invite-btn{
-            display: block;
-            border: none;
-            border-radius: 40px;
-            padding: 15px 30px;
-            background-image: linear-gradient(to right, $buttonGreen , $buttonBlue);
-            color: white;
-            font-size: 16px;
-            font-weight: 700;
-            &:hover{
-                opacity: 0.8;
-                cursor:pointer;
-            }
-    
+            @include invite
         }
         
     }
