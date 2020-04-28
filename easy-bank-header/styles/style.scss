@@ -39,3 +39,4 @@ body{
 
 .attribution { font-size: 12px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+@media all and (max-width:768px){ .attribution { font-size: 11px; }}
