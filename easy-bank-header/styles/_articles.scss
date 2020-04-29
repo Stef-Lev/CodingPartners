@@ -1,6 +1,7 @@
 .articles{
-    padding: 100px 10%;
+    padding: 100px 8%;
     background-color: hsl(0, 0%, 98%);
+    position: relative;
 
     h2{ 
         color: $headerBlue;
@@ -45,6 +46,10 @@
                 font-size: 1.3em; 
                 font-weight: 400;
                 margin-bottom: 12px;
+                &:hover{ 
+                    color: mix($buttonGreen, $buttonBlue, $weight:40%); 
+                    cursor: pointer;
+                }
             }
         }
     }
