@@ -81,7 +81,7 @@ main {
             font-size: 3rem;
             line-height: 1.2;
             color: $headerBlue;
-            font-weight: 400;
+            font-weight: 300;
         }
         p{
             margin-top: 20px;
@@ -98,11 +98,11 @@ main {
         background-image: linear-gradient(to right, $buttonGreen , $buttonBlue);
         color: white;
         font-size: 1.2rem;
-        margin: 50px auto;
+        margin: 25px auto;
         font-size: .9rem;
         font-weight: 700;
         &:hover{
-            opacity: 0.8;
+            opacity: 0.7;
             cursor:pointer;
         }
 
@@ -130,7 +130,7 @@ main {
             font-size: .9rem;
             font-weight: 700;
             &:hover{
-                opacity: 0.8;
+                opacity: 0.7;
                 cursor:pointer;
             }
     
@@ -181,6 +181,10 @@ main {
             padding-right: 20px;
             margin-top: 10px;
             text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 8%;
         }
         .intro-images-mob{
             display: none;
@@ -203,5 +207,20 @@ main {
             margin-left: 25%;
         }
     }
+ }
+
+ @media all and (min-width: 1300px) {
+    main{
+        .intro-text{
+            h1{
+                font-size: 3.5rem;
+            }
+            p{
+                font-size: 1.8rem;
+            }
+            
+        }
+    }
+
  }
     
