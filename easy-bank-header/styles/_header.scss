@@ -75,6 +75,7 @@ main {
         position: relative;
         margin: 0 auto;
         padding: 0 8%;
+        padding-bottom: 100px;
         text-align: center;
          
         h1{
@@ -174,6 +175,7 @@ main {
     main{
         .intro-set{
             flex-direction: row-reverse;
+            z-index: 3;
         }  
         .intro-text{
             flex: 50%;
@@ -184,20 +186,28 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 0 8%;
+            padding: 0 0 0 8%;
+            h1{
+                font-size: 2.7rem;
+            }
+            p{
+                font-size: 1.1rem;
+            }
         }
         .intro-images-mob{
             display: none;
         }
         .intro-images-desk{
-            display: block;
+            display: flex;
             flex: 50%;
             position: relative;
         }
         .desk-background-img{
-            position: absolute;
+            position: relative;
             width: 150%;
-            margin-top: -31%;;
+            margin-top: -31%;
+            margin-bottom: -10%;
+            z-index: -1;
             
         }
         .desk-background-phones{
@@ -206,21 +216,67 @@ main {
             margin-top: -14%;
             margin-left: 25%;
         }
-    }
  }
+}
+
+ @media all and (min-width: 1000px) {
+    main{
+        .intro-text{
+            h1{
+                font-size: 3.2rem;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+            
+        }
+    }
+}
+
 
  @media all and (min-width: 1300px) {
     main{
         .intro-text{
             h1{
-                font-size: 3.5rem;
+                font-size: 4rem;
             }
             p{
-                font-size: 1.8rem;
+                font-size: 1.4rem;
             }
             
         }
     }
+}
 
- }
+@media all and (min-width: 1700px) {
+    main{
+        .intro-text{
+            padding-right: 8%;
+
+            h1{
+                font-size: 4.3rem;
+            }
+            p{
+                font-size: 1.7rem;
+            }
+            
+        }
+        .desk-background-img{
+            position: relative;
+            width: 145%;
+            margin-top: -31%;
+            margin-bottom: -10%;
+            z-index: -1;
+            
+        }
+        .desk-background-phones{
+            position: absolute;
+            width: 85%;
+            margin-top: -20%;
+            margin-left: 30%;
+        }
+        
+    }
     
+}
+  
