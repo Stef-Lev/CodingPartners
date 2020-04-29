@@ -26,11 +26,30 @@
       </ul>
     </nav>
     <!-- Hamburger -->
-    <a href=""><img class="burger" src="./images/icon-hamburger.svg" alt=""></a>
+    <button type="button" class="burger">
+      <img class='button-image' src="./images/icon-hamburger.svg" alt="">
+    </button>
+
+
     <!-- Button in navbar -->
     <button class="invite-btn">Request Invite</button>
   </header>
+
   <main>
+
+    <!-- Collapse menu -->
+    <div class="menu-bckg">
+      <div class="nav-collapse">
+        <ul class="collapse-menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+
     <section class="intro-set">
       <div class="intro-images-mob">
         <!-- mobile images -->
@@ -45,12 +64,14 @@
       </div>
 
       <div class="intro-text">
-        <h1>Next generation digital banking</h1>
-        <p>
-          Take your financial life online. Your Easybank account will be a
-          one-stop-shop for spending, saving, budgeting, investing, and much more.
-        </p>
-        <button class="invite-btn">Request Invite</button>
+        <div class="center">
+          <h1>Next generation digital banking</h1>
+          <p>
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much more.
+          </p>
+          <button class="invite-btn">Request Invite</button>
+        </div>
       </div>
     </section>
 
@@ -154,6 +175,8 @@
       </div>
     </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
