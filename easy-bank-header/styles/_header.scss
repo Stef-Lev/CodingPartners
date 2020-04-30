@@ -107,6 +107,55 @@ main {
 }
 
 @media all and (min-width: 768px) {
+    
+    
+    main {
+        .intro-set {
+            flex-direction: row-reverse;
+            z-index: 3;
+        }
+        .intro-text {
+            flex: 50%;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 10px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 0 0 8%;
+            h1 {
+                font-size: 2.7rem;
+            }
+            p {
+                font-size: 1.1rem;
+            }
+        }
+        .intro-images-mob {
+            display: none;
+        }
+        .intro-images-desk {
+            display: flex;
+            flex: 50%;
+            position: relative;
+        }
+        .desk-background-img {
+            position: relative;
+            width: 150%;
+            margin-top: -31%;
+            margin-bottom: -10%;
+            z-index: -1;
+        }
+        .desk-background-phones {
+            position: absolute;
+            width: 90%;
+            margin-top: -14%;
+            margin-left: 25%;
+        }
+    }
+}
+
+@media all and (min-width: 900px) {
     header {
         .burger {
             display: none;
@@ -154,54 +203,8 @@ main {
                 bottom: -30px;
             }
         }
-        .burger {
-            display: none;
-        }
     }
-    main {
-        .intro-set {
-            flex-direction: row-reverse;
-            z-index: 3;
-        }
-        .intro-text {
-            flex: 50%;
-            padding-left: 20px;
-            padding-right: 20px;
-            margin-top: 10px;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0 0 0 8%;
-            h1 {
-                font-size: 2.7rem;
-            }
-            p {
-                font-size: 1.1rem;
-            }
-        }
-        .intro-images-mob {
-            display: none;
-        }
-        .intro-images-desk {
-            display: flex;
-            flex: 50%;
-            position: relative;
-        }
-        .desk-background-img {
-            position: relative;
-            width: 150%;
-            margin-top: -31%;
-            margin-bottom: -10%;
-            z-index: -1;
-        }
-        .desk-background-phones {
-            position: absolute;
-            width: 90%;
-            margin-top: -14%;
-            margin-left: 25%;
-        }
-    }
+
 }
 
 @media all and (min-width: 1000px) {

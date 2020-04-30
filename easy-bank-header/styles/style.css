@@ -124,63 +124,6 @@ main .invite-btn:hover {
 }
 
 @media all and (min-width: 768px) {
-  header .burger {
-    display: none;
-  }
-  header a {
-    text-decoration: none;
-    color: #9698a6;
-    font-size: 1rem;
-  }
-  header .invite-btn {
-    display: block;
-    border: none;
-    border-radius: 40px;
-    padding: 15px 30px;
-    background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-    background-image: linear-gradient(to right, #31d35c, #2bb7da);
-    color: white;
-    font-size: 1rem;
-    font-weight: 700;
-  }
-  header .invite-btn:hover {
-    opacity: 0.7;
-    cursor: pointer;
-  }
-  .top-navbar {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .top-navbar .top-nav-links {
-    display: inline-block;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    list-style-type: none;
-    text-decoration: none;
-  }
-  .top-navbar .top-nav-links li {
-    position: relative;
-    display: inline;
-    margin: 0 10px;
-  }
-  .top-navbar .top-nav-links li:hover::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-    background-image: linear-gradient(to right, #31d35c, #2bb7da);
-    width: 100%;
-    height: 5px;
-    bottom: -30px;
-  }
-  .top-navbar .burger {
-    display: none;
-  }
   main .intro-set {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -238,6 +181,63 @@ main .invite-btn:hover {
     width: 90%;
     margin-top: -14%;
     margin-left: 25%;
+  }
+}
+
+@media all and (min-width: 900px) {
+  header .burger {
+    display: none;
+  }
+  header a {
+    text-decoration: none;
+    color: #9698a6;
+    font-size: 1rem;
+  }
+  header .invite-btn {
+    display: block;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 30px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+    background-image: linear-gradient(to right, #31d35c, #2bb7da);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  header .invite-btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .top-navbar {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .top-navbar .top-nav-links {
+    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .top-navbar .top-nav-links li {
+    position: relative;
+    display: inline;
+    margin: 0 10px;
+  }
+  .top-navbar .top-nav-links li:hover::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+    background-image: linear-gradient(to right, #31d35c, #2bb7da);
+    width: 100%;
+    height: 5px;
+    bottom: -30px;
   }
 }
 
@@ -464,7 +464,7 @@ main .invite-btn:hover {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 5;
+  z-index: -1;
   width: 100%;
   height: 90%;
   opacity: 0;
@@ -489,7 +489,7 @@ main .invite-btn:hover {
   background-color: white;
   position: absolute;
   padding: 40px;
-  z-index: 6;
+  z-index: -1;
   top: 90px;
   width: 90%;
   border-radius: 5px;
@@ -517,7 +517,7 @@ main .invite-btn:hover {
   color: #2dc2a7;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 900px) {
   .menu-bckg {
     display: none;
   }
@@ -525,10 +525,12 @@ main .invite-btn:hover {
 
 .show {
   opacity: 1;
+  z-index: 5;
 }
 
 .moved {
   top: -400px;
+  z-index: 6;
 }
 
 footer {
