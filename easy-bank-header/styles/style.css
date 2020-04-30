@@ -108,13 +108,13 @@ main .intro-text p {
 main .invite-btn {
   border: none;
   border-radius: 40px;
-  padding: 12px 24px;
+  padding: 15px 30px;
   background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 25px auto;
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -136,11 +136,11 @@ main .invite-btn:hover {
     display: block;
     border: none;
     border-radius: 40px;
-    padding: 12px 24px;
+    padding: 15px 30px;
     background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
     background-image: linear-gradient(to right, #31d35c, #2bb7da);
     color: white;
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 700;
   }
   header .invite-btn:hover {
@@ -461,7 +461,7 @@ main .invite-btn:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   z-index: 5;
@@ -514,7 +514,7 @@ main .invite-btn:hover {
 }
 
 .nav-collapse li a:hover {
-  color: #2bb7da;
+  color: #2dc2a7;
 }
 
 @media all and (min-width: 768px) {
@@ -601,7 +601,7 @@ footer div .invite-btn {
   background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 
